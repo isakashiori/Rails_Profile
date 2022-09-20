@@ -12,5 +12,4 @@ Rails.application.routes.draw do
       get 'profile'
     end
   end
-
 end

@@ -39,6 +39,7 @@ gem 'font-awesome-sass', '~> 5.11.2'
 gem 'sassc', '2.1.0'
 gem 'jquery-rails'
 gem 'sorcery', '0.15.0'
+gem 'carrierwave', '~> 2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

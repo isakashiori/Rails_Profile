@@ -1,13 +1,14 @@
 class ProfilesController < ApplicationController
+  before_action :not_authenticated, only: %i[edit update show]
   before_action :set_user, only: %i[edit update]
 
   def edit; end
 
   def update
     if @user.update(user_params)
-      redirect_to profile_path, success: "ユーザーを登録しました"
+      redirect_to profile_path, success: "Profile was successfully updated"
     else
-      flash.now['danger'] = "ユーザー登録が失敗しました"
+      flash.now['danger'] = "Login Successful"
       render :edit
     end
   end
